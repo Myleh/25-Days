@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Playfair+Display&display=swap');
+:root {
+	--font-Lato: 'Lato', sans-serif;
+	--font-Playfair: 'Playfair Display', serif;
+	--text-color: #171717;
+	--orange: #eaa258;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+/* Main Styles */
+body {
+	font: 300 18px/34px var(--font-Lato);
+	letter-spacing: -0.09px;
+	color: rgba(23, 23, 23, 0.7);	
+}
+.container {
+	margin: 130px auto;
+	max-width: 1400px;
+	box-shadow: 0 4px 68px rgba(0, 0, 0, .1);
+	padding: 120px 8.5%;
+}
+.title  {
+	margin-bottom: 25px;
+	font: 400 42px var(--font-Playfair);
+	letter-spacing: -0.09px;
+	color: var(--text-color);
+}
+.container p {
+	margin-bottom: 40px;
+}
+.container p:first-of-type::first-letter{
+	font: 110px/90px var(--font-Playfair);
+	float: left;
+	color: var(--text-color);
+	margin-right: 20px;
+}
+.container p:last-of-type {
+	margin-bottom: 20px;
+}
+.quote {
+	font-size: 24px;
+	font-style: italic;
+	margin-bottom: 40px;	
+}
+.quote::before {
+	content: '“';
+	font-size: 60px;
+	margin: 0 25px 0 0;
+}
+.container a {
+	border: solid 2px var(--orange);
+	padding: 20px 75px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--orange);
+	font-weight: 700;
+	letter-spacing: 3.6px;
+	transition: all .3s;
+}
+.container a:hover {
+	color: #fff;
+	background: var(--orange) ;
+}

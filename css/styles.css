@@ -38,14 +38,14 @@ body {
 }
 .title  {
 	margin-bottom: 25px;
-	font: 400 42px var(--font-Playfair);
-	letter-spacing: -0.09px;
+	font: 42px var(--font-Playfair);
 	color: var(--text-color);
+	letter-spacing: -0.21px;
 }
 .container p {
 	margin-bottom: 40px;
 }
-.container p:first-of-type::first-letter{
+.container p:first-of-type::first-letter {
 	font: 110px/90px var(--font-Playfair);
 	float: left;
 	color: var(--text-color);
